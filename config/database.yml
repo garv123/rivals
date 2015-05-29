@@ -1,0 +1,23 @@
+development:  
+  adapter: postgresql
+  encoding: unicode
+  database: rival_development
+  pool: 5
+  username: garv
+  password: 123456
+
+test:  
+  adapter: postgresql
+  encoding: unicode
+  database: rival_test
+  pool: 5
+  username: garv
+  password: 123456
+
+production:  
+  adapter: postgresql
+  encoding: unicode
+  database: rival_production
+  pool: 5
+  username: garv
+  password: 123456
