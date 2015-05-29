@@ -13,7 +13,7 @@ gem 'nokogiri'
 gem 'mechanize'
 gem 'whenever'
 gem 'json'
-gem 'bcrypt',               '3.1.7'
+gem 'bcrypt-ruby', :require =>"bcrypt"
 
 
 group :development, :test do
