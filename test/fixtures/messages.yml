@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  amount: 1.5
+  restaurant_id: 
+  location: MyString
+  sublocation: MyString
+  message_date: 2015-05-29
+  merchant_id: 
+  format_id: 
+  user_id: 
+
+two:
+  amount: 1.5
+  restaurant_id: 
+  location: MyString
+  sublocation: MyString
+  message_date: 2015-05-29
+  merchant_id: 
+  format_id: 
+  user_id: 

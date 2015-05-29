@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sender_name: MyString
+  msg_regex_pattern: MyString
+  merchant_code: 1
+
+two:
+  sender_name: MyString
+  msg_regex_pattern: MyString
+  merchant_code: 1
