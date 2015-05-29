@@ -3,7 +3,6 @@ ruby "2.2.0"
 gem 'rails',        '4.2.0'
 gem 'sass-rails',   '5.0.2'
 gem 'uglifier',     '2.5.3'
-gem 'coffee-rails', '4.1.0'
 gem 'jquery-rails', '4.0.3'
 gem 'turbolinks',   '2.3.0'
 gem 'jbuilder',     '2.2.3'
@@ -14,6 +13,7 @@ gem 'nokogiri'
 gem 'mechanize'
 gem 'whenever'
 gem 'json'
+gem 'bcrypt',               '3.1.7'
 
 
 group :development, :test do
