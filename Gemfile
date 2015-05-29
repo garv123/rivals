@@ -13,6 +13,7 @@ gem 'curb'
 gem 'nokogiri'
 gem 'mechanize'
 gem 'whenever'
+gem 'json'
 
 group :development, :test do
   gem 'byebug',      '3.4.0'

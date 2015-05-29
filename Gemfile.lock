@@ -179,6 +179,7 @@ DEPENDENCIES
   curb
   jbuilder (= 2.2.3)
   jquery-rails (= 4.0.3)
+  json
   mechanize
   nokogiri
   pg (= 0.17.1)
