@@ -89,8 +89,10 @@ class RivalsController < ApplicationController
 	def signup
 		mobile_number = params[:phone]
 		password = params[:password]
-		if User.create(contact_number:mobile_number,password:password,password_confirmation:password)
-			render :json => {status:200,message:"User has been signed up"}
+		if user=User.create(contact_number:mobile_number,password:password,password_confirmation:password)
+			api_key= ApiKey.create!
+			api_key.update(:user_id=>user.id)
+			render :json => {status:200,api_key:api_key[:access_token]}
 		else
 			render :json => {status:500,message:"Cannot sign up"}
 		end
