@@ -33,7 +33,6 @@ class RivalsController < ApplicationController
 			location= params[:location]
 			sublocation=params[:sublocation]
 			message_date=params[:message_date].to_datetime
-			debugger
 			merchant_id = params[:merchant_id]
 			restaurant_name=params[:restaurant_name]
 			message_date_id=params[:message_date][0..9].gsub('-', '').to_i
