@@ -11,13 +11,11 @@ class RivalsController < ApplicationController
       		user_id= api_key['user_id']
       		user = User.find(user_id)
 			message=user.messages.order(:message_date).first
-			message_date=message[:message_date]
-	      	if message_date.nil?
-	      		render :json => {status:500,message:"no message "}
-	      	else
-	      		render :json => {status:200,datetime:message_date}
-	      	end
-      		
+			if message.nil?
+				render :json => {status:500,message:"no message "}
+			else
+				render :json => {status:200,datetime:message[:message_date]}
+			end
     	end
 
 
