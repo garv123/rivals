@@ -1,5 +1,7 @@
 class RivalsController < ApplicationController
 	skip_before_action :verify_authenticity_token
+
+
 	def getLatestDate
 		api_key = ApiKey.find_by_access_token(params[:api_key])
 
@@ -20,6 +22,7 @@ class RivalsController < ApplicationController
 
 
 	end
+
 
 	def login
 		contact_number = params[:phone]
