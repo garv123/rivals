@@ -45,7 +45,6 @@ class RivalsController < ApplicationController
 			else
 				bank_transaction=false
 			end
-			debugger
 			message=Message.create(amount:amount,location:location,sublocation:sublocation,message_date:message_date,message_date_id:message_date_id,message_time_id:message_time_id,bank_transaction:bank_transaction)
 			merchant.messages<<message
 			restaurant_id=nil
