@@ -21,7 +21,7 @@ class RivalsController < ApplicationController
 
 	end
 
-
+	
 	def login
 		contact_number = params[:phone]
 		password = params[:password]
