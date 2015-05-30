@@ -36,7 +36,7 @@ class RivalsController < ApplicationController
 			merchant_id = params[:merchant_id]
 			restaurant_name=params[:restaurant_name]
 			message_date_id=params[:message_date][0..9].gsub('-', '').to_i
-			message_time_id=params[:message_date][11..21].gsub(':','').to_i
+			message_time_id=params[:message_date][11..15].gsub(':','').to_i
 			merchant=Merchant.find_by(merchant_code:merchant_id.to_i)
 			bank_transaction=true
 			if  params[:merchant_code].to_i==1
