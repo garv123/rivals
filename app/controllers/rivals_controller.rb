@@ -1,7 +1,22 @@
 class RivalsController < ApplicationController
 	skip_before_action :verify_authenticity_token
 	def getLatestDate
+		api_key = ApiKey.find_by_access_token(params[:api_key])
 
+    	if api_key == nil
+      		render :json => {status: 400,message:"Unauthorized"}
+    	else
+      		user_id= api_key['user_id']
+      		user = User.find(user_id)
+			message=user.messages.order(:message_date).first
+			message_date=message[:message_date]
+	      	if message_date==nil
+	      		render :json => {status:500,message:"no message "}
+	      	else
+	      		render :json => {status:200,datetime:message_date}
+	      	end
+      		
+    	end
 
 
 	end

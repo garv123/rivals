@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   post "/signup" => "rivals#signup"
   post "/login"    => "rivals#login"
+  post "/getLatestDate" => "rivals#getLatestDate"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
